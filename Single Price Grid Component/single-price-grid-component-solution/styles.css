@@ -1,0 +1,121 @@
+body {
+  font-family: 'Karla', Arial, sans-serif;
+  background-color: #e0f7fa;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  max-width: 800px;
+}
+
+.top-section {
+  padding: 30px;
+  text-align: center;
+}
+
+.top-section h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.top-section .guarantee {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.top-section .description {
+  color: hsl(218, 22%, 67%);
+  font-size: 1em;
+}
+
+.bottom-section {
+  display: flex;
+  background-color: #009688;
+  color: white;
+}
+
+.subscription,
+.why-us {
+  padding: 30px;
+  flex: 1;
+}
+
+.subscription {
+  background-color: hsl(179, 62%, 40%);
+  text-align: center;
+}
+
+.subscription h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.subscription .price {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+.subscription .price span {
+  font-size: 0.5em;
+}
+
+.subscription .full-access {
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.subscription button {
+  background-color: #8bc34a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  padding: 10px 80px;
+  cursor: pointer;
+}
+
+.subscription button:hover {
+  background-color: #7cb342;
+}
+
+.why-us {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.why-us h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.why-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-us ul li {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .bottom-section {
+    flex-direction: column;
+  }
+
+  .subscription,
+  .why-us {
+    padding: 20px;
+  }
+}
